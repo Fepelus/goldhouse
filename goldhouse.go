@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Fepelus/goldhouse/fetcher"
+	"github.com/Fepelus/goldhouse/formatter"
 )
 
 func main() {
@@ -12,5 +13,6 @@ func main() {
 	datedprices := fetcher.ConvertToDatedPrices(houseprices)
 	goldfetcher := fetcher.NewGold(datedprices)
 	matcheddata := goldfetcher.Fetch()
-	fmt.Println(matcheddata)
+//  fmt.Println(formatter.CsvFormat(matcheddata))
+  fmt.Println(formatter.HtmlFormat(matcheddata))
 }
