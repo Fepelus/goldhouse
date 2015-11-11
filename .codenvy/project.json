@@ -1,1 +1,1 @@
-{"builders":{"configs":{}},"mixinTypes":[],"runners":{"configs":{"project:/GoldHouse%20Runner":{"ram":1000,"variables":{"configurationType":"go"},"options":{}}},"default":"project:/GoldHouse%20Runner"},"type":"go","attributes":{"language":["go"]}}
+{"builders":{"configs":{}},"mixinTypes":["contribution"],"runners":{"configs":{"project:/GoldHouse%20Runner":{"ram":1000,"variables":{"configurationType":"go"},"options":{}}},"default":"project:/GoldHouse%20Runner"},"type":"go","attributes":{"contribute_branch":["master"],"contribute_mode":["contribute"],"language":["go"]}}

@@ -18,5 +18,13 @@ func NewDatedPrice(indate time.Time, houseprice int, goldprice int) DatedPrice {
 }
 
 func (this DatedPrice) String () string {
-  return fmt.Sprintf("%s,%d,%d\n", this.Date.Format("2006-01-02"), this.HousePrice, this.GoldPrice)
+  return fmt.Sprintf("%s,%d,%d\n", this.Datef(), this.HousePrice, this.GoldPrice)
+}
+
+func (this DatedPrice) Datef() string {
+  return this.Date.Format("2006-01-02")
+}
+
+func (this DatedPrice) Ratio() int {
+  return this.HousePrice / this.GoldPrice
 }

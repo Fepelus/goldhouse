@@ -27,7 +27,8 @@ const header = `<html>
       data.addRows([
 `
 
-const footer = `     ]);
+const footer = `
+      ]);
       var options = {
         chart: {
           title: 'Median price of a house in Brunswick in ounces of gold',
