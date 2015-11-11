@@ -31,8 +31,8 @@ const footer = `
       ]);
       var options = {
         chart: {
-          title: 'Median price of a house in Brunswick in ounces of gold',
-          subtitle: 'in millions of dollars (USD)'
+          title: 'Median price of a house in Brunswick',
+          subtitle: 'in ounces of gold'
         },
         width: 900,
         height: 500
